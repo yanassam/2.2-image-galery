@@ -5,7 +5,8 @@ const searchIcon = document.getElementById('searchIcon');
 window.addEventListener('load', function () {
   input.focus();
   input.value = 'dog';
-  photos()
+  photos();
+  input.value = '';
 });
 // леняем лупу на крестик проверяем, не пустое ли значение в поле ввода input. 
 //Если поле не пустое, удаляем класс fa-magnifying-glass и добавляем класс fa-xmark
