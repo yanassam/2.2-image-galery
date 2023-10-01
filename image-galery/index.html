@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsplash API</title>
+  <link rel="icon" type="image/png" href="./images/camera-svgrepo-com.svg">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="wraper">
+        <div class="navigation">
+          <h2><i class="fa-solid fa-camera" style="color: orange;"></i> Unsplash API</h2>
+          <div class="search">
+            <input type="text" id="input" onclick="photos()" placeholder="Search"><i id="searchIcon"
+              class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="wraper">
+        <div class="grid"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__rss">
+        <p class="footer__rss--1">2023</p>
+        <a class="footer__rss--1" href="https://rs.school/js-stage0"><img src="./images/rs_school_js.svg"></a>
+        <a class="footer__rss--1" href="https://github.com/yanassam">yanassam</a>
+      </div>
+    </footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

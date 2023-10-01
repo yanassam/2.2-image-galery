@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Forum&family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: white;
+  color: black;
+}
+
+header {
+  border-bottom: 5px solid orange;
+}
+
+.wraper {
+  width: 95%;
+  margin: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.navigation h2 {
+  font-size: rem;
+}
+
+.search {
+  position: relative;
+  width: 350px;
+}
+
+.search input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search i {
+  color: black;
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.search i:hover {
+  color: orange;
+}
+
+input:focus {
+  box-shadow: 0 0 5px orange;
+  border: 1px solid orange;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.img {
+  width: 380px;
+  height: 200px;
+  margin-top: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.footer__rss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 20px 20px 40px 20px;
+}
+
+.footer__rss--1 {
+  /* color: white; */
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin: 0;
+  transition: 1s;
+}
+
+.footer__rss--1 img {
+  width: 80px;
+}
+
+.footer__rss a:hover {
+  color: orange;
+}
