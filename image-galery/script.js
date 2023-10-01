@@ -4,7 +4,7 @@ const searchIcon = document.getElementById('searchIcon');
 // курсор в input
 window.addEventListener('load', function () {
   input.focus();
-  input.value = 'dog';
+  input.value = 'Wroclaw';
   photos();
   input.value = '';
 });
@@ -36,15 +36,15 @@ input.addEventListener('keydown', function (event) {
 
 })
 // очистка старых фото
-function deleteImg() {
+function deletePhotos() {
   grid.innerHTML = '';
 }
 
 function photos() {
 
-  deleteImg();
+  deletePhotos();
 
-  const url = `https://api.unsplash.com/search/photos?query=${input.value}&per_page=30&orientation=landscape&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo`;
+  const url = `https://api.unsplash.com/search/photos?query=${input.value}&per_page=9&orientation=landscape&client_id=se_3jsAV4nkG0MvM8FwCH0MyscY1vuBcu4okEVw-SBY`;
 
   fetch(url)
 
@@ -56,15 +56,15 @@ function photos() {
     })
 
     .then(data => {
-      const images = [];
+      const photo = [];
       for (let i = 0; i < data.results.length; i++) {
-        images[i] = document.createElement('div');
-        images[i].className = 'img';
-        images[i].style.backgroundImage = 'url(' + data.results[i].urls.raw + ')';
-        images[i].addEventListener('dblclick', function () {
+        photo[i] = document.createElement('div');
+        photo[i].className = 'img';
+        photo[i].style.backgroundImage = 'url(' + data.results[i].urls.raw + ')';
+        photo[i].addEventListener('dblclick', function () {
           window.open(data.results[i].links.download, '_blank');
         })
-        grid.appendChild(images[i]);
+        grid.appendChild(photo[i]);
       }
     })
 }
